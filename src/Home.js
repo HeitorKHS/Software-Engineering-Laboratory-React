@@ -10,7 +10,7 @@ const Home = () =>
                     <Link to="/Atividade01">Atividade 01 - Relógio e letreiro</Link>
                 </li>
                 <li>
-                    <Link to="/Atividade02">Atividade 02 - </Link>
+                    <Link to="/Atividade02">Atividade 02 - Contador de pessoas</Link>
                 </li>
             </nav>
         </div>
