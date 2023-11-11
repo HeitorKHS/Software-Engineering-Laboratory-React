@@ -40,3 +40,9 @@ img{
 .dec-button{
     background-color: rgb(255, 96, 96); 
 }
+
+.reset-button button{
+    border: 2px solid black;
+    margin-top: 0px;
+    padding: 10px 50px;
+}

@@ -5,6 +5,12 @@ function Contador()
 {
     const [countWoman, setCountWoman] = useState(0);
     const [countMan, setCountMan] = useState(0);
+    
+    function resetCount()
+    {
+        setCountMan(0);
+        setCountWoman(0);
+    } 
 
     return(
         <>
@@ -23,9 +29,13 @@ function Contador()
                         <button className='dec-button' onClick={()=>setCountWoman(countWoman-1)}>-</button>
                     </div>
                     <h1>Woman</h1>
-                    <div className='woman-count'>
+                    <div>
                         <p>{countWoman}</p>
                     </div>
+                </div>
+                
+                <div className='reset-button'>
+                    <button onClick={()=>resetCount()}>Reset</button>
                 </div>
 
                 <div className='count-user'>
@@ -35,7 +45,7 @@ function Contador()
                         <button className='dec-button' onClick={()=>setCountMan(countMan-1)}>-</button>
                     </div>
                     <h1>Man</h1>
-                    <div className='man-count'>
+                    <div>
                         <p>{countMan}</p>
                     </div>
                 </div>
