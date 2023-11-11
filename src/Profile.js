@@ -1,20 +1,24 @@
-function Avatar()
+import Avatar from "./Avatar.js";
+
+function Card({children})
 {
-    return(
-        <img className="Avatar"
-            src="https://i.imgur.com/1bX5QH6.jpg"
-            alt="Lin Lanying"
-            width={100}
-            height={100}
-        />
-    );
+   return(
+    <div className="card">
+        {children}
+    </div>
+   );
 }
 
 export default function Profile(){
     return(
-        <avatar 
-            person={{ name: 'Lin Lanying', imageId: '1bX5QH6'}}
-            size={100}
-        />
+        <Card>
+            <Avatar 
+                person={{
+                    name: 'Katsuko Saruhashi',
+                    imageId: 'yfeOqp2'
+                }}
+                size={100}
+            />
+        </Card>
     );
 }
