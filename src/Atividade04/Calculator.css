@@ -1,0 +1,39 @@
+.Calculator-body{
+    background-color: black;
+    width: 320px;
+    padding: 32;
+    margin-top: 64;
+}
+
+.Button-body{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+button{
+    background-color: white;
+    height: 56;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen{
+    width: 320px;
+    color: white;
+    text-align: right;
+}
+
+.results{
+    width: 320px;
+    min-height: 30px;
+    max-height: 800px;
+}
+
+.preview{
+    width: 320px;
+    min-height: 30px;
+    max-height: 800px;
+}
